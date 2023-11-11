@@ -1,0 +1,15 @@
+def generate_acronym():
+    # Prompt user to enter a phrase
+    phrase = input("Enter a Phrase: ")
+
+    # Split the phrase into a list of words
+    words = phrase.split()
+
+    # Take the first letter of each word and combine them
+    acronym = ''.join(word[0] for word in words)
+
+    # Convert the acronym to uppercase
+    return acronym.upper()
+
+# Call the function and print the result
+print(generate_acronym())
